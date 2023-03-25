@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*REM = Root EM*/
+/*1rem = 16px*/
+:root{
+    font-size: 62.5%; /*Equivalente a 10px*/
+}
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Epilogue', 'sans-serif';
+    background: #ECE9FD;
+    padding: 6.0rem 2.3rem;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    color: #090039;
+}
+
+main p:first-child{
+    color: #7158EF;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 3px;
+
+    margin-bottom: 1.7rem;
+}
+
+h1 + p{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: rgba(10, 0, 57, 0.64);
+    margin-bottom: 3.2rem;
+}
+
+main {
+    max-width: 33.0rem;
+    margin: 0 auto;
+}
+
+main a{
+    line-height: 3.2rem;
+    color: #090039;
+    text-decoration: none;
+    margin-bottom: 7.2rem;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+ul{
+    margin-top: 7.2rem;
+}
+
+ul li{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #090039;
+
+    max-width: 25.7rem;
+    
+    display: flex;
+    align-items: flex-start;
+
+    gap: 3.8rem;
+}
+
+ul li span{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: #090039;
+}
+
+ul li + li{
+    /*Pegar todos os li que anterior a ele tenha um li*/
+    margin-top: 3.2rem;
+
+}
+
+/*media queries*/
+
+@media(min-width:700px){
+    body{
+        padding: 8rem;
+    }
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div{
+        /*primeira div dentro do main*/
+        max-width: 484px;
+    }
+
+    ul li{
+        gap: 5.3rem;
+        max-width: 400px;
+        align-items:center;
+    }
+    
+}
